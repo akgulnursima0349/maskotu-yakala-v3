@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Maskotu Yakala - Bilgi Yarışması Oyunu</title>
+    <link rel="stylesheet" href="styles.css?v=20260210_1270">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ==================== GİRİŞ EKRANI ==================== -->
+    <div id="intro-screen" class="screen active">
+        <div class="intro-container">
+            <!-- Sol Taraf - Kurallar -->
+            <div class="intro-left">
+                <h1 class="game-title">Maskotu<br>Yakala</h1>
+                <div class="rules-box">
+                    <div class="rules-list">
+                        <div class="rule-item">
+                            <span class="rule-icon">✓</span>
+                            <span>Her doğru cevap bir atış hakkı kazandırır.</span>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-icon">🎯</span>
+                            <span>Atışlarını isabetli yapmalısın.</span>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-icon">⭐</span>
+                            <span>Her isabetli atış puan kazandırır.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ Taraf - Animasyon ve Play -->
+            <div class="intro-right">
+                <div class="intro-animation">
+                    <canvas id="introCanvas"></canvas>
+                </div>
+                <button id="play-button" class="play-btn">
+                    <span class="play-icon">▶</span>
+                    <span>OYNA</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hareketli Bulutlar (Giriş Ekranı) -->
+        <div class="intro-clouds">
+            <img src="game/cloud.png" alt="Bulut" class="intro-cloud cloud-1">
+            <img src="game/cloud.png" alt="Bulut" class="intro-cloud cloud-2">
+            <img src="game/cloud.png" alt="Bulut" class="intro-cloud cloud-3">
+        </div>
+    </div>
+
+    <!-- ==================== OYUN EKRANI ==================== -->
+    <div id="game-screen" class="screen">
+        <!-- Canvas Oyun Alanı (Catcher, Plunger, Arka Plan) -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- TÜP YAPISI - JavaScript ile dinamik oluşturulacak -->
+        <div class="pipe-wrapper">
+            <div class="pipe-container" id="pipeContainer">
+                <!-- Tüp ve hayvanlar JavaScript ile buraya eklenecek -->
+            </div>
+        </div>
+
+        <!-- UI Overlay -->
+        <div id="game-ui">
+            <!-- Sol Üst - Puan Tablosu -->
+            <div class="score-chart">
+                <img src="game/chart.png" alt="Puan Tablosu" class="chart-bg">
+            </div>
+
+            <!-- Üst Orta - Seviye ve Skor -->
+            <div class="top-center-ui">
+                <div class="level-display">
+                    <img src="game/question_count.png" alt="Seviye" class="ui-icon">
+                    <span id="level-text">1/10</span>
+                </div>
+                <div class="score-display">
+                    <img src="game/score_count.png" alt="Skor" class="ui-icon">
+                    <span id="score-text">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SORU POPUP ==================== -->
+    <div id="question-modal" class="modal">
+        <div class="modal-content question-content">
+            <div class="timer-container">
+                <div class="timer-capsule">
+                    <img src="game/timer.png" alt="Süre" class="timer-bg">
+                    <div class="timer-fill-container">
+                        <div id="timer-bar" class="timer-bar"></div>
+                    </div>
+                    <span id="timer-text">10</span>
+                </div>
+            </div>
+
+            <div id="question-container">
+                <div id="question-image-container"></div>
+                <p id="question-text"></p>
+                <div id="question-audio-area"></div>
+            </div>
+
+            <div id="answers-container"></div>
+
+            <div id="feedback-container" class="hidden">
+                <div id="feedback-icon"></div>
+                <p id="feedback-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ÖZET POPUP (ADIM 1) ==================== -->
+    <div id="summary-modal" class="modal">
+        <div class="modal-content summary-content">
+            <h2>Oyun Tamamlandı!</h2>
+            <div class="final-score">
+                <span>Toplam Puanın:</span>
+                <span id="summary-score-value">0</span>
+            </div>
+            <div class="final-stats">
+                <div class="stat-item">
+                    <span>Doğru Cevap:</span>
+                    <span id="summary-correct-answers">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>İsabetli Atış:</span>
+                    <span id="summary-successful-catches">0</span>
+                </div>
+            </div>
+            <p style="color: #666; font-style: italic; margin-top: 10px;">Lütfen bekleyin...</p>
+        </div>
+    </div>
+
+    <!-- ==================== KUTLAMA EKRANI (ADIM 2) ==================== -->
+    <div id="celebration-screen" class="screen flex-column celebration-screen">
+        <div id="confetti-container"></div>
+
+        <div class="celebration-content">
+            <img src="game/score_count.png" alt="Kupa" class="trophy-img">
+            <h1 class="celebration-title">MUHTEŞEM!</h1>
+            <div class="celebration-score-box">
+                <span class="score-label">TOPLAM PUAN</span>
+                <span id="final-score-value">0</span>
+            </div>
+            <button id="restart-button" class="play-btn celebration-restart">
+                <span class="restart-icon">🔄</span>
+                <span>TEKRAR OYNA</span>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="script.js?v=20260210_1270"></script>
+</body>
+
+</html>

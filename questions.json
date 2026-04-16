@@ -1,0 +1,275 @@
+{
+  "thinking_time": 3,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Görsele göre doğru bilgi veren çocuğun bulunduğu seçeneği işaretleyiniz.",
+      "image": "questions/id1s.png",
+      "audio": "sounds/questions/q1.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": "Saat oyuncaklardan yüksektedir.",
+          "image": null,
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": "Oyuncak ayı, oyuncak arabadan yüksektedir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Kedi sehpadan yüksektedir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Hangi seçenekte kedi bize göre kutunun sağındadır?",
+      "image": null,
+      "audio": "sounds/questions/q2.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": null,
+          "image": "id2c1.png",
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": null,
+          "image": "id2c2.png",
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": null,
+          "image": "id2c3.png",
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Hangi seçenekte elma aradadır?",
+      "image": null,
+      "audio": "sounds/questions/q3.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": null,
+          "image": "id3c1.png",
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": null,
+          "image": "id3c2.png",
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": null,
+          "image": "id3c3.png",
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Görsele göre yanlış bilgi verilen seçeneği işaretleyiniz.",
+      "image": "id4s.png",
+      "audio": "sounds/questions/q4.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": "Kulübe ağacın önündedir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Ağaç kulübenin arkasındadır.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Köpek kulübenin üstündedir.",
+          "image": null,
+          "audio": null,
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Görsele göre doğru bilgi verilen seçeneği işaretleyiniz.",
+      "image": "id5s.png",
+      "audio": "sounds/questions/q5.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": "Ördek göletin dışındadır.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "At gölete en yakın hayvandır.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Koyun göletin dışındadır.",
+          "image": null,
+          "audio": null,
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Hangi seçenekteki varlık diğerleriyle eş değildir.",
+      "image": null,
+      "audio": "sounds/questions/q6.mp3",
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": null,
+          "image": "id6c1-3.png",
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": null,
+          "image": "id6c2.png",
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": null,
+          "image": "id6c1-3.png",
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Görsele göre yanlış bilgi verilen seçeneği işaretleyiniz.",
+      "image": "id7s.png",
+      "audio": null,
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": "Görseldeki toplar eştir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Oyuncak ayılar eştir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "Şapkalar eştir.",
+          "image": null,
+          "audio": null,
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Görsele göre doğru bilgi verilen seçeneği işaretleyiniz.",
+      "image": "id8s.png",
+      "audio": null,
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": "çoraplar eştir.",
+          "image": null,
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": "ceketler eştir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": "ayakkabılar eştir.",
+          "image": null,
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Görselde hangi seçenekteki çantanın eşi vardır?",
+      "image": "id9s.png",
+      "audio": null,
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": null,
+          "image": "id9c1.png",
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": null,
+          "image": "id9c2.png",
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": null,
+          "image": "id9c3.png",
+          "audio": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Hangi seçenekteki nesneler eş nesnelerdir?",
+      "image": null,
+      "audio": null,
+      "audio_parts": null,
+      "answers": [
+        {
+          "text": null,
+          "image": "id10c1.png",
+          "audio": null,
+          "correct": true
+        },
+        {
+          "text": null,
+          "image": "id10c2.png",
+          "audio": null,
+          "correct": false
+        },
+        {
+          "text": null,
+          "image": "id10c3.png",
+          "audio": null,
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
