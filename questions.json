@@ -37,19 +37,19 @@
       "answers": [
         {
           "text": null,
-          "image": "id2c1.png",
+          "image": "questions/id2c1.png",
           "audio": null,
           "correct": false
         },
         {
           "text": null,
-          "image": "id2c2.png",
+          "image": "questions/id2c2.png",
           "audio": null,
           "correct": true
         },
         {
           "text": null,
-          "image": "id2c3.png",
+          "image": "questions/id2c3.png",
           "audio": null,
           "correct": false
         }
@@ -64,19 +64,19 @@
       "answers": [
         {
           "text": null,
-          "image": "id3c1.png",
+          "image": "questions/id3c1.png",
           "audio": null,
           "correct": false
         },
         {
           "text": null,
-          "image": "id3c2.png",
+          "image": "questions/id3c2.png",
           "audio": null,
           "correct": true
         },
         {
           "text": null,
-          "image": "id3c3.png",
+          "image": "questions/id3c3.png",
           "audio": null,
           "correct": false
         }
@@ -85,7 +85,7 @@
     {
       "id": 4,
       "text": "Görsele göre yanlış bilgi verilen seçeneği işaretleyiniz.",
-      "image": "id4s.png",
+      "image": "questions/id4s.png",
       "audio": "sounds/questions/q4.mp3",
       "audio_parts": null,
       "answers": [
@@ -112,7 +112,7 @@
     {
       "id": 5,
       "text": "Görsele göre doğru bilgi verilen seçeneği işaretleyiniz.",
-      "image": "id5s.png",
+      "image": "questions/id5s.png",
       "audio": "sounds/questions/q5.mp3",
       "audio_parts": null,
       "answers": [
@@ -145,19 +145,19 @@
       "answers": [
         {
           "text": null,
-          "image": "id6c1-3.png",
+          "image": "questions/id6c1-3.png",
           "audio": null,
           "correct": false
         },
         {
           "text": null,
-          "image": "id6c2.png",
+          "image": "questions/id6c2.png",
           "audio": null,
           "correct": true
         },
         {
           "text": null,
-          "image": "id6c1-3.png",
+          "image": "questions/id6c1-3.png",
           "audio": null,
           "correct": false
         }
@@ -166,7 +166,7 @@
     {
       "id": 7,
       "text": "Görsele göre yanlış bilgi verilen seçeneği işaretleyiniz.",
-      "image": "id7s.png",
+      "image": "questions/id7s.png",
       "audio": null,
       "audio_parts": null,
       "answers": [
@@ -193,7 +193,7 @@
     {
       "id": 8,
       "text": "Görsele göre doğru bilgi verilen seçeneği işaretleyiniz.",
-      "image": "id8s.png",
+      "image": "questions/id8s.png",
       "audio": null,
       "audio_parts": null,
       "answers": [
@@ -220,25 +220,25 @@
     {
       "id": 9,
       "text": "Görselde hangi seçenekteki çantanın eşi vardır?",
-      "image": "id9s.png",
+      "image": "questions/id9s.png",
       "audio": null,
       "audio_parts": null,
       "answers": [
         {
           "text": null,
-          "image": "id9c1.png",
+          "image": "questions/id9c1.png",
           "audio": null,
           "correct": true
         },
         {
           "text": null,
-          "image": "id9c2.png",
+          "image": "questions/id9c2.png",
           "audio": null,
           "correct": false
         },
         {
           "text": null,
-          "image": "id9c3.png",
+          "image": "questions/id9c3.png",
           "audio": null,
           "correct": false
         }
@@ -253,19 +253,19 @@
       "answers": [
         {
           "text": null,
-          "image": "id10c1.png",
+          "image": "questions/id10c1.png",
           "audio": null,
           "correct": true
         },
         {
           "text": null,
-          "image": "id10c2.png",
+          "image": "questions/id10c2.png",
           "audio": null,
           "correct": false
         },
         {
           "text": null,
-          "image": "id10c3.png",
+          "image": "questions/id10c3.png",
           "audio": null,
           "correct": false
         }
